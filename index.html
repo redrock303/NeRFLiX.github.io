@@ -22,7 +22,12 @@
 	  ga('create', 'UA-105303874-1', 'auto');
 	  ga('send', 'pageview');
   </script>
-  
+
+  <style>
+    p.small {line-height:70%;}
+    p.big {line-height:200%;}
+    </style>
+
   <body style='-webkit-text-size-adjust: 100%; margin:0; background-image: linear-gradient(#49615d8c, #49615d8c);'>
   
     <div class="jumbotron jumbotron-fluid bg-dark banner">
@@ -55,8 +60,8 @@
         <span class="section">Abstruct</span>
         <span class="page-word">
         <font size="3" face="verdana">
-        <p>
-          Neural radiance fields~(NeRF) show great success in novel view synthesis. However, in real-world scenes, recovering high-quality details from the source images 
+        <p class="big">
+          Neural radiance fields (NeRF) show great success in novel view synthesis. However, in real-world scenes, recovering high-quality details from the source images 
           is still challenging for the existing NeRF-based approaches, due to the potential imperfect calibration information and scene representation inaccuracy. 
           Even with high-quality training frames, the synthetic novel views produced by NeRF models still suffer from notable rendering artifacts, such as noise, blur, etc.
            Towards to improve the synthesis quality of NeRF-based approaches, we propose NeRFLiX, a general NeRF-agnostic restorer paradigm by learning a degradation-driven 
@@ -67,13 +72,15 @@
         <br />
         </p>
         </span>
+        
+        <br /><br />
 
         <hr/>
       <p></p>
         <span class="section">Visualizations</span>
         <span class="page-word">
           <font size="3" face="verdana">
-        <p> We show how NeRFLiX can be used to enhance the rendered novel views of various NeRF models on different in-the-wild scenes.
+        <p class="big"> We show how NeRFLiX can be used to enhance the rendered novel views of various NeRF models on different in-the-wild scenes.
           To play with the demo, click the button in the middle of each image and slide it to the left. For results on other datasets, you are welcome to check our paper,
            or try our code directly. 
           <br />
@@ -137,7 +144,7 @@
           </span>
           <p></p>
           <div>
-              <iframe src="figs/NeRFLiX_Demo.mp4" height="800px" width="1600" allowfullscreen></iframe>
+              <iframe src="figs/NeRFLiX_Demo.mp4" height="752px" width="1008px" allowfullscreen></iframe>
           </div>
         
         <hr/>
